@@ -1,0 +1,23 @@
+<div class="details">
+    <p>Following are the updated details of accounts of customers</p>
+    <table  border="3">
+        <thead>
+            <tr>
+                <th>Account Number</th>
+                <th>Account Type</th>
+                <th>Account Balance</th>
+                <th>Account Status</th>
+                <th>Customer Id</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let accountdetails of accounts">
+                <td>{{accountdetails.accountNumber}}</td>
+                <td>{{accountdetails.accountType}}</td>
+                <td>{{accountdetails.accountBalance}}</td>
+                <td>{{accountdetails.accountStatus}}</td>
+                <td>{{accountdetails.customer.customerId}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

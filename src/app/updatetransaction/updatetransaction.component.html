@@ -1,0 +1,21 @@
+<div class="container">
+    <h3 align="center">Insert account details</h3>
+    
+    <form id="transactionForm" name="addTransaction">
+        <div class="transaction">
+        <label>transactionId : </label>
+        <input type="text" name="transactionId" [(ngModel)]="transaction.transactionId"><br><br>
+        <label>transactionAmount : </label>
+        <input type="text" name="transactionAmount" [(ngModel)]="transaction.transactionAmount"><br><br>
+        <label>transcationDate : </label>
+        <input type="date" name="transcationDate" [(ngModel)]="transaction.transactionDate"><br><br>
+        <label>Transaction Type : </label>
+        <input type="text" name="branchId" [(ngModel)]="transaction.transactionType"><br><br>
+        <label>Account Number : </label>
+        <input type="text" name="accountNumber" [(ngModel)]="transaction.account.accountNumber"><br><br>
+        <input type="button" value="submit" (click)="TransactionUpdate()">
+    </div>
+    </form>
+    {{msg}}
+</div>
+

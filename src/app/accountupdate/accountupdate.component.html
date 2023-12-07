@@ -1,0 +1,19 @@
+<div class="container">
+    <h3 align="center">Updating Account details</h3>
+    <form>
+        <div class="account">
+        <label>Account Number : </label>
+        <input type="text" name="accountNumber" [(ngModel)]="accountdetails.accountNumber"><br><br>
+        <label>Account Type : </label>
+        <input type="text" name="accountType" [(ngModel)]="accountdetails.accountType"><br><br>
+        <label>Account Balance : </label>
+        <input type="text" name="accountBalance" [(ngModel)]="accountdetails.accountBalance"><br><br>
+        <label>Account Status : </label>
+        <input type="text" name="accountStatus" [(ngModel)]="accountdetails.accountStatus"><br><br>
+        <label>Customer Id : </label>
+        <input type="text" name="accountNumber" [(ngModel)]="accountdetails.customer.customerId"><br><br>
+        <input type="button" value="submit" (click)="AccountUpdate()">
+    </div>
+    </form>
+    {{msg}}
+</div>

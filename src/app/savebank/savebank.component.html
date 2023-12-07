@@ -1,0 +1,26 @@
+
+<div class="container">
+    <h3 align="center">Insert bank details</h3>
+    <form>
+        <div class="bank">
+        <label>Branch Id : </label>
+        <input type="text" name="branchId" [(ngModel)]="branchmanager.branchId"><br><br>
+        <label>Branch Name : </label>
+        <input type="text" name="branchName" [(ngModel)]="branchmanager.branchName"><br><br>
+        <label>Branch City : </label>
+        <input type="text" name="branchCity" [(ngModel)]="branchmanager.branchCity"><br><br>
+        <label>Branch Pin Code : </label>
+        <input type="text" name="branchPinCode" [(ngModel)]="branchmanager.branchPinCode"><br><br>
+        <label>Manager Id : </label>
+        <input type="text" name="managerId" [(ngModel)]="branchmanager.managerId"><br><br>
+        <label>Manager Name : </label>
+        <input type="text" name="managerName" [(ngModel)]="branchmanager.managerName"><br><br>
+        <label>Manager Experience : </label>
+        <input type="text" name="managerExp" [(ngModel)]="branchmanager.managerExp"><br><br>
+        <!--<label>Customer Id : </label>
+        <input type="text" name="customerId" [(ngModel)]="branchmanager.customerId"><br><br>-->
+        <input type="button" value="submit" (click)="savebank()">
+    </div>
+    </form>
+    {{msg}}
+</div>

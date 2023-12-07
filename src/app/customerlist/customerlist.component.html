@@ -1,0 +1,25 @@
+<div>
+    <p>Follwing are the updated details of customers</p>
+    <table border="3">
+        <thead>
+            <tr>
+                <th>Customer Id</th>
+                <th>Customer Name</th>
+                <th>Customer Contact</th>
+                <th>CustomerAddress</th>
+                <th>Manager Id</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let customer of customers">
+                <td>{{customer.customerId}}</td>
+                <td>{{customer.customerName}}</td>
+                <td>{{customer.customerContact}}</td>
+                <td>{{customer.customerAddress}}</td>
+                <td>{{customer.manager.managerId}}</td>
+                
+            </tr>
+        </tbody>
+    </table>
+</div>
+

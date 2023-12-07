@@ -1,0 +1,27 @@
+<div>
+    <p>Following are the updated details of the Bankbranch and managers</p>
+    <table border="3">
+        <thead>
+            <tr>
+                <th>Branch Id</th>
+                <th>Branch Name</th>
+                <th>Branch City</th>
+                <th>Branch PinCode</th>
+                <th>Manager Id</th>
+                <th>Manager Name</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let branchmanager of branchmanagers">
+                <td>{{branchmanager.branchId}}</td>
+                <td>{{branchmanager.branchName}}</td>
+                <td>{{branchmanager.branchCity}}</td>
+                <td>{{branchmanager.branchPinCode}}</td>
+                <td>{{branchmanager.managerId}}</td>
+                <td>{{branchmanager.managerName}}</td>
+                <!--<td>{{branchmanager.customerId}}</td>-->
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,24 @@
+<div>
+    <p>Following are the updated details of Transactions</p>
+    <table  border="3">
+        <thead>
+            <tr>
+                <th>Transaction Id</th>
+                <th>Transaction Amount</th>
+                <th>Transcation Date</th>
+                <th>Transaction Type</th>
+                <th>Account Number</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let transaction of transactions">
+                <td>{{transaction.transactionId}}</td>
+                <td>{{transaction.transactionAmount}}</td>
+                <td>{{transaction.transactionDate}}</td>
+                <td>{{transaction.transactionType}}</td>
+                <td>{{transaction.account.accountNumber}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
